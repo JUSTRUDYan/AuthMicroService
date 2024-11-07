@@ -10,14 +10,7 @@
 
 #include "AddressEntity.h"
 #include "PhoneNumberEntity.h"
-
-
-enum class Gender {
-    PreferNotToSay,
-    Male,
-    Female,
-    Other
-};
+#include "Enums.h"
 
 class UserEntity {
 public:

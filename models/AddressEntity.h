@@ -6,6 +6,7 @@
 #define ADDRESSENTITY_H
 #include <wfrest/Json.h>
 #include <string>
+#include <optional>
 
 
 class AddressEntity {

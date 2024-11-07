@@ -6,14 +6,7 @@
 #define PHONENUMBERENTITY_H
 #include <optional>
 #include <string>
-
-enum class PhoneType {
-    Mobile,
-    Home,
-    Work,
-    Fax,
-    Other
-};
+#include "Enums.h"
 
 class PhoneNumberEntity {
 public:

@@ -7,7 +7,7 @@
 class AuthRepository
 {
 protected:
-    pqxx::work tx; // Не посилання, а власний об'єкт транзакції
+    pqxx::connection c; // Не посилання, а власний об'єкт транзакції
 
 public:
     explicit AuthRepository(pqxx::connection& connection);
