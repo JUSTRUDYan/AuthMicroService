@@ -1,0 +1,3 @@
+/Users/rudyan/CLionProjects/AuthMicroService/cmake-build-debug/CMakeFiles/AuthMicroService.dir
+/Users/rudyan/CLionProjects/AuthMicroService/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rudyan/CLionProjects/AuthMicroService/cmake-build-debug/CMakeFiles/rebuild_cache.dir

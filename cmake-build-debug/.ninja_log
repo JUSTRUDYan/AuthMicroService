@@ -1,0 +1,6 @@
+# ninja log v6
+19	2345	1730999527353616832	CMakeFiles/AuthMicroService.dir/repositories/AuthRepositoryImpl.cpp.o	e9286dc6b5beba11
+15	3263	1731001306004247728	CMakeFiles/AuthMicroService.dir/repositories/DBConfigRepository.cpp.o	3d7c367810556e55
+3263	3557	1731001309252022823	AuthMicroService	a501c8af53418350
+31	5824	1730986572075963672	CMakeFiles/AuthMicroService.dir/main.cpp.o	9fd6de4d3032c38d
+7	322	1731012724875332371	build.ninja	a36a65344a3ba062
