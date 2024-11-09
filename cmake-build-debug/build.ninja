@@ -56,13 +56,6 @@ build CMakeFiles/AuthMicroService.dir/main.cpp.o: CXX_COMPILER__AuthMicroService
   OBJECT_DIR = CMakeFiles/AuthMicroService.dir
   OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir
 
-build CMakeFiles/AuthMicroService.dir/repositories/AuthRepositoryImpl.cpp.o: CXX_COMPILER__AuthMicroService_unscanned_Debug /Users/rudyan/CLionProjects/AuthMicroService/repositories/AuthRepositoryImpl.cpp || cmake_object_order_depends_target_AuthMicroService
-  DEP_FILE = CMakeFiles/AuthMicroService.dir/repositories/AuthRepositoryImpl.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rudyan/Documents/projects/Libraries/CPP/workflow/_include -I/Users/rudyan/Documents/projects/Libraries/CPP/wfrest/_include -I/usr/local/opt/openssl@3/include -isystem /usr/local/include -isystem /usr/local/Cellar/openssl@3/3.4.0/include
-  OBJECT_DIR = CMakeFiles/AuthMicroService.dir
-  OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir/repositories
-
 build CMakeFiles/AuthMicroService.dir/repositories/DBConfigRepository.cpp.o: CXX_COMPILER__AuthMicroService_unscanned_Debug /Users/rudyan/CLionProjects/AuthMicroService/repositories/DBConfigRepository.cpp || cmake_object_order_depends_target_AuthMicroService
   DEP_FILE = CMakeFiles/AuthMicroService.dir/repositories/DBConfigRepository.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
@@ -70,26 +63,12 @@ build CMakeFiles/AuthMicroService.dir/repositories/DBConfigRepository.cpp.o: CXX
   OBJECT_DIR = CMakeFiles/AuthMicroService.dir
   OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir/repositories
 
-build CMakeFiles/AuthMicroService.dir/models/AddressEntity.cpp.o: CXX_COMPILER__AuthMicroService_unscanned_Debug /Users/rudyan/CLionProjects/AuthMicroService/models/AddressEntity.cpp || cmake_object_order_depends_target_AuthMicroService
-  DEP_FILE = CMakeFiles/AuthMicroService.dir/models/AddressEntity.cpp.o.d
+build CMakeFiles/AuthMicroService.dir/services/AuthAPIServiceImpl.cpp.o: CXX_COMPILER__AuthMicroService_unscanned_Debug /Users/rudyan/CLionProjects/AuthMicroService/services/AuthAPIServiceImpl.cpp || cmake_object_order_depends_target_AuthMicroService
+  DEP_FILE = CMakeFiles/AuthMicroService.dir/services/AuthAPIServiceImpl.cpp.o.d
   FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/rudyan/Documents/projects/Libraries/CPP/workflow/_include -I/Users/rudyan/Documents/projects/Libraries/CPP/wfrest/_include -I/usr/local/opt/openssl@3/include -isystem /usr/local/include -isystem /usr/local/Cellar/openssl@3/3.4.0/include
   OBJECT_DIR = CMakeFiles/AuthMicroService.dir
-  OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir/models
-
-build CMakeFiles/AuthMicroService.dir/models/PhoneNumber.cpp.o: CXX_COMPILER__AuthMicroService_unscanned_Debug /Users/rudyan/CLionProjects/AuthMicroService/models/PhoneNumber.cpp || cmake_object_order_depends_target_AuthMicroService
-  DEP_FILE = CMakeFiles/AuthMicroService.dir/models/PhoneNumber.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rudyan/Documents/projects/Libraries/CPP/workflow/_include -I/Users/rudyan/Documents/projects/Libraries/CPP/wfrest/_include -I/usr/local/opt/openssl@3/include -isystem /usr/local/include -isystem /usr/local/Cellar/openssl@3/3.4.0/include
-  OBJECT_DIR = CMakeFiles/AuthMicroService.dir
-  OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir/models
-
-build CMakeFiles/AuthMicroService.dir/models/UserCredentialsEntity.cpp.o: CXX_COMPILER__AuthMicroService_unscanned_Debug /Users/rudyan/CLionProjects/AuthMicroService/models/UserCredentialsEntity.cpp || cmake_object_order_depends_target_AuthMicroService
-  DEP_FILE = CMakeFiles/AuthMicroService.dir/models/UserCredentialsEntity.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/rudyan/Documents/projects/Libraries/CPP/workflow/_include -I/Users/rudyan/Documents/projects/Libraries/CPP/wfrest/_include -I/usr/local/opt/openssl@3/include -isystem /usr/local/include -isystem /usr/local/Cellar/openssl@3/3.4.0/include
-  OBJECT_DIR = CMakeFiles/AuthMicroService.dir
-  OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir/models
+  OBJECT_FILE_DIR = CMakeFiles/AuthMicroService.dir/services
 
 
 # =============================================================================
@@ -99,10 +78,9 @@ build CMakeFiles/AuthMicroService.dir/models/UserCredentialsEntity.cpp.o: CXX_CO
 #############################################
 # Link the executable AuthMicroService
 
-build AuthMicroService: CXX_EXECUTABLE_LINKER__AuthMicroService_Debug CMakeFiles/AuthMicroService.dir/main.cpp.o CMakeFiles/AuthMicroService.dir/repositories/AuthRepositoryImpl.cpp.o CMakeFiles/AuthMicroService.dir/repositories/DBConfigRepository.cpp.o CMakeFiles/AuthMicroService.dir/models/AddressEntity.cpp.o CMakeFiles/AuthMicroService.dir/models/PhoneNumber.cpp.o CMakeFiles/AuthMicroService.dir/models/UserCredentialsEntity.cpp.o | /Users/rudyan/Documents/projects/Libraries/CPP/workflow/_lib/libworkflow.dylib /Users/rudyan/Documents/projects/Libraries/CPP/wfrest/_lib/libwfrest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libz.tbd /usr/local/lib/libssl.dylib /usr/local/Cellar/openssl@3/3.4.0/lib/libssl.dylib /usr/local/Cellar/openssl@3/3.4.0/lib/libcrypto.dylib
+build AuthMicroService: CXX_EXECUTABLE_LINKER__AuthMicroService_Debug CMakeFiles/AuthMicroService.dir/main.cpp.o CMakeFiles/AuthMicroService.dir/repositories/DBConfigRepository.cpp.o CMakeFiles/AuthMicroService.dir/services/AuthAPIServiceImpl.cpp.o | /Users/rudyan/Documents/projects/Libraries/CPP/workflow/_lib/libworkflow.dylib /usr/local/lib/libwfrest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libz.tbd /usr/local/Cellar/openssl@3/3.4.0/lib/libssl.dylib /usr/local/Cellar/openssl@3/3.4.0/lib/libcrypto.dylib
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib -Wl,-rpath,/Users/rudyan/Documents/projects/Libraries/CPP/workflow/_lib  /Users/rudyan/Documents/projects/Libraries/CPP/workflow/_lib/libworkflow.dylib  /Users/rudyan/Documents/projects/Libraries/CPP/wfrest/_lib/libwfrest.a  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libz.tbd  /usr/local/lib/libssl.dylib  -lpqxx  /usr/local/Cellar/openssl@3/3.4.0/lib/libssl.dylib  /usr/local/Cellar/openssl@3/3.4.0/lib/libcrypto.dylib
-  LINK_PATH = -L/usr/local/lib
+  LINK_LIBRARIES = -Wl,-rpath,/Users/rudyan/Documents/projects/Libraries/CPP/workflow/_lib  /Users/rudyan/Documents/projects/Libraries/CPP/workflow/_lib/libworkflow.dylib  /usr/local/lib/libwfrest.a  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libz.tbd  /usr/local/Cellar/openssl@3/3.4.0/lib/libssl.dylib  /usr/local/Cellar/openssl@3/3.4.0/lib/libcrypto.dylib  -lpqxx
   OBJECT_DIR = CMakeFiles/AuthMicroService.dir
   POST_BUILD = :
   PRE_LINK = :

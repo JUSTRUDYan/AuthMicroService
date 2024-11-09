@@ -1,7 +1,7 @@
 //
 // Created by steam on 08.11.2024.
 //
-
+#pragma once
 #ifndef AUTHMICROSERVICE_GENDERENUM_H
 #define AUTHMICROSERVICE_GENDERENUM_H
 
@@ -24,7 +24,7 @@ enum class PhoneType {
     Other
 };
 
-std::string genderToString(Gender gender) {
+inline std::string genderToString(const Gender gender) {
     switch (gender) {
         case Gender::Male:
             return "male";
@@ -38,7 +38,7 @@ std::string genderToString(Gender gender) {
 }
 
 
-std::string phoneTypeToString(PhoneType phoneType) {
+inline std::string phoneTypeToString(const PhoneType phoneType) {
     switch (phoneType) {
         case PhoneType::Mobile:
             return "mobile";

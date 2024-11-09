@@ -1,7 +1,7 @@
 //
 // Created by Anton Demianov on 07.11.2024.
 //
-
+#pragma once
 #ifndef USERCREDENTIALSENTITY_H
 #define USERCREDENTIALSENTITY_H
 
@@ -15,13 +15,13 @@ public:
     std::string email;
     std::optional<unsigned long> last_login;
 
-    UserCredentialsEntity(const std::string& login,
-                          const std::string& password,
-                          const std::string& email,
+    UserCredentialsEntity(std::string  login,
+                          std::string  password,
+                          std::string  email,
                           const std::optional<unsigned long>& last_login = {})
-         :login(login),
-          password(password),
-          email(email),
+         :login(std::move(login)),
+          password(std::move(password)),
+          email(std::move(email)),
           last_login(last_login) {}
 };
 

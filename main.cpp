@@ -4,7 +4,8 @@
 #include <jwt-cpp/jwt.h>
 #include <pqxx/pqxx>
 #include "./repositories/DBConfigRepository.h"
-#include "repositories/IAuthRepository.h"
+#include "repositories/AuthRepositoryImpl.h"
+
 
 using namespace wfrest;
 
@@ -47,8 +48,9 @@ int main(const int argc, char* argv[])
         return EXIT_FAILURE;
     }
 
-    pqxx::work tx{configRepo.connection.value()};
-    IAuthRepository authRepo = AuthRepositoryImpl();
+    pqxx::connection& conn = configRepo.connection.value();
+    AuthRepositoryImpl authRepo(conn);
+
 
 /*
     HttpServer svr;
