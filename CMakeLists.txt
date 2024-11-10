@@ -3,13 +3,30 @@ project(AuthMicroService)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(LIBRARIES_DIR "$ENV{HOME}/Documents/projects/Libraries/CPP")
+set(LIBRARIES_DIR "/mnt/d/projects/Libraries/CPP")
 
-include_directories(
-        ${LIBRARIES_DIR}/workflow/_include
-        ${LIBRARIES_DIR}/wfrest/_include
-        /usr/local/opt/openssl@3/include
-        /usr/local/include
+add_executable(AuthMicroService main.cpp
+        repositories/IAuthRepository.h
+        models/UserEntity.h
+        models/AddressEntity.h
+        models/PhoneNumberEntity.h
+        models/UserCredentialsEntity.h
+        repositories/AuthRepositoryImpl.h
+        repositories/DBConfigRepository.cpp
+        repositories/DBConfigRepository.h
+        models/Enums.h
+        services/AuthAPIServiceImpl.cpp
+        services/IAuthAPIService.h
+        models/TokenDTO.h
+        api/AuthControllerImpl.h
+        utilies/setErrorResponse.h
+)
+
+target_include_directories(AuthMicroService PRIVATE
+        "${LIBRARIES_DIR}/workflow/_include"
+        "${LIBRARIES_DIR}/wfrest/_include"
+        "/usr/local/opt/openssl@3/include"
+        "/usr/local/include"
 )
 
 set(WORKFLOW_LIB_DIR "${LIBRARIES_DIR}/workflow/_lib")
@@ -30,7 +47,6 @@ message(STATUS "Wfrest Library: ${WFREST_LIBRARY}")
 message(STATUS "Zlib Library: ${ZLIB_LIBRARY}")
 message(STATUS "OpenSSL Library: ${OPENSSL_LIBRARY}")
 
-# Check if the libraries were found
 if(NOT WORKFLOW_LIBRARY)
     message(FATAL_ERROR "Workflow library not found.")
 endif()
@@ -43,23 +59,6 @@ endif()
 if(NOT OPENSSL_LIBRARY)
     message(FATAL_ERROR "OpenSSL library not found.")
 endif()
-
-add_executable(AuthMicroService main.cpp
-        repositories/IAuthRepository.h
-        models/UserEntity.h
-        models/AddressEntity.h
-        models/PhoneNumberEntity.h
-        models/UserCredentialsEntity.h
-        repositories/AuthRepositoryImpl.h
-        repositories/DBConfigRepository.cpp
-        repositories/DBConfigRepository.h
-        models/Enums.h
-        services/AuthAPIServiceImpl.cpp
-        services/IAuthAPIService.h
-        models/TokenDTO.h
-        api/AuthControllerImpl.h
-        api/IAuthController.h
-)
 
 target_link_libraries(AuthMicroService
         PRIVATE
